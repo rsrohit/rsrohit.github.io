@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Language Selection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>Please select your language:</p>
+    <button onclick="redirectToInvitation('english')">English</button>
+    <button onclick="redirectToInvitation('spanish')">Spanish</button>
+
+    <script>
+        function redirectToInvitation(language) {
+            if (language === 'english') {
+                window.location.href = 'invitation_english.html';
+            } else if (language === 'spanish') {
+                window.location.href = 'invitation_spanish.html';
+            }
+            // Add more languages as needed
+        }
+    </script>
+</body>
+</html>
